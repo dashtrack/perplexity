@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
-  # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -26,10 +25,8 @@ Gem::Specification.new do |spec|
         f.start_with?(*%w[bin/ test/ spec/ features/ .git .github appveyor Gemfile])
     end
   end
-  # TODO: make gem executable as a command line tool
-  # spec.bindir = "exe"
-  # spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "ruby-openai", "~> 7.4.0"
+  spec.add_dependency "ruby-openai", "~> 8.0.0"
 end
